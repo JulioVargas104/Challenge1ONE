@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador | ONE</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1>Challenge 1 <br> Encriptador de Texto</h1>
+                </div>
+                <h2>Ingrese el mensaje a encriptar aquí:</h2>
+                <br><br>
+                <input type="text" id="texto" class="container__input" placeholder="Ingrese el texto...">
+                <br><br><br>
+                <p><i class="fas fa-info-circle"></i> Solo letras minúsculas sin acentos y espacios</p>
+                <div class="chute container__botones">
+                    <button onclick="Encriptar();" class="container__boton" id="encryptButton"> Encriptar</button>
+                    <button onclick="Desencriptar();" class="container__boton" id="decryptButton"
+                        disabled>Desencriptar</button>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-container">
+        <div class="container1">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1>Mensaje encriptado</h1>
+                </div>
+                <input id="outputText" class="container__input" disabled>
+                <div class="chute container__botones">
+                    <button onclick="CopiarResultado();" class="container__boton" id="CopyButton"
+                        disabled>Copiar</button>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
