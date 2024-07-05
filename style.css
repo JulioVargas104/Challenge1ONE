@@ -42,6 +42,7 @@ body {
     font-weight: 700;
     border: none;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .container__boton:disabled {
@@ -77,6 +78,7 @@ p,
 button {
     font-family: 'Inter', sans-serif;
     margin-top: 2rem;
+    
 }
 
 .main-container {
@@ -84,7 +86,19 @@ button {
     justify-content: space-between;
     padding: 20px;
 }
+#footer {
+    background-color: #041832;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    color: rgb(1, 1, 1);
+    text-align: center;
+  }
 
-
+  .imagen {
+    border-radius: 55px;
+  }
 
 
