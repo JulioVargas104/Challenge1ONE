@@ -5,12 +5,12 @@ function Encriptar() {
         return;
     }
     let outputText = inputText.replace(/e/g, "enter")
-                              .replace(/i/g, "imes")
-                              .replace(/a/g, "ai")
-                              .replace(/o/g, "ober")
-                              .replace(/u/g, "ufat");
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
+        .replace(/o/g, "ober")
+        .replace(/u/g, "ufat");
     document.getElementById("outputText").value = outputText;
-    addToHistory(inputText, outputText);
+    actualizarEstadoBoton();
 }
 
 function Desencriptar() {
@@ -20,17 +20,24 @@ function Desencriptar() {
         return;
     }
     let outputText = inputText.replace(/enter/g, "e")
-                              .replace(/imes/g, "i")
-                              .replace(/ai/g, "a")
-                              .replace(/ober/g, "o")
-                              .replace(/ufat/g, "u");
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
     document.getElementById("outputText").value = outputText;
-    addToHistory(inputText, outputText);
+    actualizarEstadoBoton();
+
 }
 
 function copiarResultado() {
-    let outputText = document.getElementById("outputText");
-    outputText.select();
-    document.execCommand("copy");
-    alert("El texto ha sido correctamente copiado al portapapeles.");
+    let outputText = document.getElementById("outputText").value;
+    navigator.clipboard.writeText(outputText).then(function () {
+        alert("El texto ha sido correctamente copiado al portapapeles.");
+    });
+}
+
+function actualizarEstadoBoton() {
+    if (outputText.value.trim() !== "") {
+        coppyButton.removeAttribute("disabled");
+    }
 }

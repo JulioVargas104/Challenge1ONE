@@ -13,25 +13,23 @@ body {
     justify-content: center;
 }
 
-.container {
+.containerChallenge {
     width: 900px;
     height: 600px;
     display: flex;
     align-items: center;
     border-radius: 24px;
     border: 1px solid #0905ff;
+    padding: 3rem;
 }
-.container1 {
+
+.containerMensajeEncriptado {
     width: 900px;
     height: 600px;
     display: flex;
     align-items: center;
     border-radius: 24px;
     border: 1px solid #ffffff;
-}
-
-.container__informaciones {
-    flex: 1;
     padding: 3rem;
 }
 
@@ -61,6 +59,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    margin-top: 2rem;
 }
 
 .container__botones {
@@ -77,6 +76,7 @@ h1 {
 p,
 button {
     font-family: 'Inter', sans-serif;
+    margin-top: 2rem;
 }
 
 .main-container {
@@ -84,6 +84,7 @@ button {
     justify-content: space-between;
     padding: 20px;
 }
+
 
 
 
