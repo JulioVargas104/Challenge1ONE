@@ -114,3 +114,19 @@ button {
     display: inline-block;
     
 }
+@media (min-width: 768px) {
+    .containerMensajeEncriptado {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .containerMensajeEncriptado > div {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .presentacion__imagen {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
